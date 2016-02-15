@@ -2,7 +2,7 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="system" nsURI="http://system/1.0" nsPrefix="system">
   <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-    <details key="settingDelegates" value="org.eclipse.incquery.querybasedfeature"/>
+    <details key="settingDelegates" value="org.eclipse.viatra.query.querybasedfeature"/>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="System" eSuperTypes="#//ResourceElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="provides" upperBound="-1"
@@ -30,14 +30,14 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="tasks" upperBound="-1"
         eType="ecore:EClass process.ecore#//Task" changeable="false" volatile="true"
         transient="true" derived="true">
-      <eAnnotations source="org.eclipse.incquery.querybasedfeature">
-        <details key="patternFQN" value="system.queries.JobTaskCorrespondence"/>
+      <eAnnotations source="org.eclipse.viatra.query.querybasedfeature">
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.JobTaskCorrespondence"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="info" upperBound="-1" eType="ecore:EClass operation.ecore#//RuntimeInformation"
         changeable="false" volatile="true" transient="true" derived="true">
-      <eAnnotations source="org.eclipse.incquery.querybasedfeature">
-        <details key="patternFQN" value="system.queries.JobInfoCorrespondence"/>
+      <eAnnotations source="org.eclipse.viatra.query.querybasedfeature">
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.JobInfoCorrespondence"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
@@ -50,14 +50,20 @@
         eType="ecore:EClass process.ecore#//Task" changeable="false" volatile="true"
         transient="true" derived="true">
       <eAnnotations source="org.eclipse.incquery.querybasedfeature">
-        <details key="patternFQN" value="system.queries.DataTaskWriteCorrespondence"/>
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.DataTaskWriteCorrespondence"/>
+      </eAnnotations>
+      <eAnnotations source="org.eclipse.viatra.query.querybasedfeature">
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.DataTaskWriteCorrespondence"/>
       </eAnnotations>
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EReference" name="readingTask" upperBound="-1"
         eType="ecore:EClass process.ecore#//Task" changeable="false" volatile="true"
         transient="true" derived="true">
       <eAnnotations source="org.eclipse.incquery.querybasedfeature">
-        <details key="patternFQN" value="system.queries.DataTaskReadCorrespondence"/>
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.DataTaskReadCorrespondence"/>
+      </eAnnotations>
+      <eAnnotations source="org.eclipse.viatra.query.querybasedfeature">
+        <details key="patternFQN" value="org.eclipse.viatra.examples.bpm.queries.system.DataTaskReadCorrespondence"/>
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>

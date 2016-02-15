@@ -10,26 +10,27 @@
 
 <plugin>
 
-
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <package
-            uri="http://process/1.0"
-            class="process.ProcessPackage"
-            genModel="model/derivedModel.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated derivedModel -->
       <package
             uri="http://operation/1.0"
-            class="operation.OperationPackage"
+            class="org.eclipse.viatra.examples.bpm.operation.OperationPackage"
             genModel="model/derivedModel.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated derivedModel -->
       <package
             uri="http://system/1.0"
-            class="system.SystemPackage"
+            class="org.eclipse.viatra.examples.bpm.system.SystemPackage"
             genModel="model/derivedModel.genmodel"/>
    </extension>
 
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated derivedModel -->
+      <package
+            uri="http://process/1.0"
+            class="org.eclipse.viatra.examples.bpm.process.ProcessPackage"
+            genModel="model/derivedModel.genmodel"/>
+   </extension>
 </plugin>
